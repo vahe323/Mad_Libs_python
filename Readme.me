@@ -1,0 +1,32 @@
+# Mad Libs (Python)
+
+A command-line Mad Libs game made for Tumo Labs (Station Project 1).
+
+## How it works
+
+1. Choose one of three story templates (Hospital, Camping, Castle) or pick "Surprise me" and the computer chooses for you.
+2. The program asks for words like nouns, verbs and adjectives.
+3. For any word you can type `r` and the computer will pick a random word for you.
+4. At the end your silly story is printed. You can play again as many times as you like.
+
+If you type something invalid (an empty word or a wrong menu choice), the program just asks again.
+
+## How to run
+
+You need Python 3 installed.
+
+```
+python MadLabs.py
+```
+
+## Features
+
+- 3 story templates, easy to add more in the `STORIES` dictionary
+- "Random word" option using Python's `random` module
+- Random story option
+- Input checking: asks again on invalid input
+- Play again option
+
+## Adding your own story
+
+Add a new entry to `STORIES` in `MadLabs.py`. Write blanks like `{noun_1}`, `{adjective_2}`, `{verb_1}`. The part before the underscore is the word type (it must exist in `PROMPTS` and `RANDOM_WORDS`), and the number lets you use the same type more than once.
